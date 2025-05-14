@@ -1,0 +1,35 @@
+h1 {
+  text-align-last: center;
+  background-color: dodgerblue;
+  
+}
+img {
+  display: block;
+  margin: auto;
+  background: black;
+  width: 95px;
+  height: 93px;
+  border-radius: 200px;
+  background-color: black;
+  
+}
+p{
+  text-align-last: center;
+  text-emphasis-color: black;
+  background-color: ghostwhite;
+}
+.button{
+  padding: 90px;
+  font-size: 80px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  grid-column: span 4;
+  word-break: break-word;
+  color: white;
+  border-bottom-color: cornflowerblue;
+}
+.span{
+  text-align: left;
+  margin-top: 50px;
+}
