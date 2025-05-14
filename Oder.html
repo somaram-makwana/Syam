@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फोटोग्राफर ऑर्डर फॉर्म</title>
+    <link rel="stylesheet" href="styles/oder.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>📸 फोटोग्राफी सेवा ऑर्डर फॉर्म</h1>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="username">आपका पूरा नाम:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mobile">मोबाइल नंबर:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">ईमेल:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">इवेंट की तारीख:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="program">इवेंट का प्रकार:</label>
+                <select id="program" name="program" required>
+                    <option value="">-- चुनें --</option>
+                    <option value="wedding">शादी</option>
+                    <option value="birthday">जन्मदिन</option>
+                    <option value="event">कॉर्पोरेट इवेंट</option>
+                    <option value="portfolio">पोर्टफोलियो शूट</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">अतिरिक्त जानकारी:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            
+            <button type="submit">ऑर्डर जमा करें</button>
+        </form>
+        
+        <div id="successMessage" class="success-message"></div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/oder.js"></script>
+</body>
+</html>
